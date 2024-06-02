@@ -1,37 +1,15 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
    * colors
    */
 
-  --medium-sea-green: hsl(157, 100%, 36%);
-  --silver-chalice: hsl(0, 0%, 66%); 
-  --granite-gray: hsl(0, 0%, 40%);
-  --sonic-silver: hsl(208, 7%, 46%);
-  --dodger-blue: hsl(205, 100%, 50%);
-  --oxford-blue: hsl(219, 37%, 18%);
-  --light-gray: hsl(0, 0%, 80%);
-  --gunmetal: hsl(216, 14%, 21%);
+  
   --cultured: hsl(210, 12%, 97%);
-  --charcoal: hsl(210, 29%, 24%);
+  --sonic-silver: hsl(208, 7%, 46%);
+  --primary: #FEC200;
   --white: hsl(0, 0%, 100%);
-  --jet: hsl(0, 0%, 20%);
+  --black: #000;
 
   --gradient: linear-gradient(0.5turn, hsl(213, 42%, 91%), hsl(0, 0%, 100%));
 
@@ -124,7 +102,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body { background: var(--white); }
+body { 
+  background: var(--white);
+ }
 
 ::-webkit-scrollbar { width: 10px; }
 
@@ -155,9 +135,9 @@ body { background: var(--white); }
 }
 
 .btn-primary {
-  background: var(--dodger-blue);
+  background: var(--primary);
   color: var(--white);
-  border-color: var(--dodger-blue);
+  border: none;
 }
 
 .btn-primary:is(:hover, :focus) { --dodger-blue: hsl(205, 100%, 55%); }
@@ -179,7 +159,7 @@ body { background: var(--white); }
 .h4 { font-size: var(--fs-5); }
 
 .section-text {
-  color: var(--sonic-silver);
+  color: var(--white);
   line-height: 1.6;
 }
 
@@ -195,7 +175,6 @@ body { background: var(--white); }
 
 
 
-
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
@@ -206,12 +185,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--white);
+  color: var(--white);
+  background: var(--primary);
   z-index: 4;
-  transition: var(--transition);
+  transition: var(--transition-1);
 }
 
-header.active { box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2); }
+header.active { 
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+ }
 
 header .container {
   max-width: unset;
@@ -231,7 +213,7 @@ header .container {
 :is(.nav-open-btn, .nav-close-btn) ion-icon { --ionicon-stroke-width: 40px; }
 
 .navbar {
-  background: var(--white);
+  background-color: var(--primary);
   position: fixed;
   top: 0;
   right: -280px;
@@ -239,7 +221,7 @@ header .container {
   height: 100vh;
   padding-top: 60px;
   visibility: hidden;
-  transition: var(--transition);
+  transition: var(--transition-1);
   box-shadow: -2px 0 4px hsla(0, 0%, 0%, 0.1);
 }
 
@@ -255,7 +237,7 @@ header .container {
 }
 
 .navbar-link {
-  color: var(--granite-gray);
+  color: var(--black);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
   padding: 20px;
@@ -286,25 +268,89 @@ header .container {
 }
 
 
+.main-btn{
+  color: #000;
+  background-color: var(--primary);
+  border: none;
+  margin: 40px 0 0 0;
+}
 
-
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
 
 .pricing {
-  background: var(--cultured);
   padding: var(--section-padding);
+  color: var(--primary);
+  position: relative;
+  z-index: 1;
 }
 
-.pricing-content { margin-bottom: 40px; }
+/* Using pseudo-elements to control background layering */
+.pricing::before, .pricing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1; /* Ensure backgrounds are behind the content */
+}
+
+.pricing::before {
+  left: 0;
+  background-image: url('./assets/hero-img.jpg');
+  background-position: left top;
+}
+
+.pricing::after {
+  right: 0;
+  background-image: url('./assets/main-bg.jpg');
+  background-position: right top;
+  z-index: -2; /* Ensure the right image is on top */
+}
+
+.pricing-content {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2; /* Ensure content is above the background images */
+}
 
 .pricing .section-title { margin-bottom: 20px; }
 
 .pricing .section-text { margin-bottom: 30px; }
 
-.pricing-banner img { width: 100%; }
+/* .bg-right-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right; 
+  background-size: 65% auto; 
+  background-attachment: fixed; 
+ 
+} */
+/* .bg-left-img {
+  text-align: center; 
+
+}
+
+.bg-left-img img {
+  width: 100%; 
+} */
+
+/* .hero-bg {
+  background-image: url("./assets//hero-img.jpg");                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left;
+  background-size: 60% auto;
+} */
 
 
 /*-----------------------------------*\
@@ -318,14 +364,15 @@ header .container {
 
 .service .section-title { margin-bottom: 15px; }
 
-.service .section-text { margin-bottom: 45px; }
+.service .section-text { margin-bottom: 45px;
+color: var(--sonic-silver); }
 
 .service-list {
   display: grid;
   gap: 40px;
 }
 
-.service .card-icon {
+.service .card-icon img {
   width: max-content;
   margin-inline: auto;
   background-color: var(--cultured);
@@ -335,18 +382,17 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--sonic-silver);
   font-size: 60px;
   margin-bottom: 20px;
 }
 
 .service .card-title { margin-bottom: 12px; }
 
-.card-text {
-  color: var(--sonic-silver);
+.service .card-text {
   line-height: 1.6;
   max-width: 250px;
   margin-inline: auto;
+  color: var(--sonic-silver);
 }
 
 
@@ -358,13 +404,22 @@ header .container {
 .about {
   padding: var(--section-padding);
   background: var(--cultured);
+  color: var(--primary);
+
 }
 
 .about-top,
 .about-bottom,
-.about-banner { margin-bottom: 40px; }
+.about-banner { margin: 50px 0; }
 
-.about-banner img { width: 100%; }
+
+.about-banner img { 
+  width: max-content;
+  height: auto;
+  min-width: 30vw;
+  object-fit: cover;
+  border-radius: 50%;
+ }
 
 .about .section-title,
 .about-content .section-text:not(:last-child),
@@ -379,7 +434,7 @@ header .container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
-   
+
 }
 /*-----------------------------------*\
   #STATS
@@ -392,7 +447,9 @@ header .container {
   background-color: #292A2D;
 }
 
-.stats .section-title { margin-bottom: 15px; }
+.stats .section-title { margin-bottom: 15px;
+  color: var(--primary);
+ }
 
 .stats .section-text { margin-bottom: 45px; }
 
@@ -403,14 +460,14 @@ header .container {
 
 .stats .card-icon {
   background-color: var(--cultured);
-  color: var(--sonic-silver);
   font-size: 60px;
   margin-bottom: 20px;
 }
 
 .stats-card {
   width: max-content;
-  background-color: var(--cultured);
+  background-color: inherit;
+  border: var(--white) solid 3px;
   border-radius: 50%;
   height: 180px;
   min-width: 180px;
@@ -418,14 +475,54 @@ header .container {
   align-content: center;
 }
 
-.stats .card-title { margin-bottom: 12px; }
+.stats .card-title { margin-bottom: 12px;
+  color: var(--primary);
+}
 
-.card-text {
-  color: var(--sonic-silver);
+.stats-card .card-text {
   line-height: 1.6;
   max-width: 250px;
   margin-inline: auto;
+  color: var(--white);
 }
+
+/*-----------------------------------*\
+  #feedback
+\*-----------------------------------*/
+
+
+.feedback {
+  padding: var(--section-padding);
+  text-align: center;
+  margin: 80px 0;
+  position: relative;
+  padding: 250px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFE840;
+  opacity: 0.7; 
+  z-index: -1;
+}
+
+.feedback .container {
+  z-index: 1;
+
+}
+
+.feedback-text, .feedback-title { 
+  margin-bottom: 25px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--black);
+ }
 
 
 /*-----------------------------------*\
@@ -435,7 +532,6 @@ header .container {
 .newsletter { padding: 120px 0px; }
 
 .newsletter-card {
-  background-color: var(--cultured);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -976,10 +1072,13 @@ header .container {
 
   header.active {
     padding: 15px;
+    color: #000;
+
     background: var(--white);
   }
 
-  header .container { max-width: 980px; }
+  header .container {
+     max-width: 980px; }
 
   .nav-open-btn,
   .nav-close-btn { display: none; }
@@ -1010,7 +1109,7 @@ header .container {
 
   .navbar-link {
     --fs-5: 16px;
-    color: var(--charcoal);
+    color: var(--white);
     padding: 0 10px;
   }
 
