@@ -1,395 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Food website example">
-    <link rel="stylesheet" href="style.css">
-    <title>Food Website</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food website example">
+  <link rel="stylesheet" href="style.css">
+  <title>Food Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <!-- 
+  <!-- 
       - #PRELOADER
     -->
-  
-    <div class="preloader" data-preloader>
-      <div class="circle"></div>
-    </div>
-  
-  
-    <!-- 
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+  <!-- 
       - #HEADER
     -->
-  
-    <header class="header" data-header>
-      <div class="container">
-  
-        <div class="logo">
-          Your Logo
-        </div>
-  
-        <nav class="navbar" data-navbar>
-  
-          <div class="navbar-top">
-  
-            <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-  
-          </div>
-  
-          <ul class="navbar-list">
-  
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Home</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Doctors</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Services</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Blog</a>
-            </li>
-  
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Contact</a>
-            </li>
-  
-          </ul>
 
-        </nav>
-  
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-  
-        <!-- <a href="#" class="btn has-before title-md">Make Appointment</a> -->
-  
-        <div class="overlay" data-nav-toggler data-overlay></div>
-  
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="logo">
+        Your Logo
       </div>
-    </header>
-    
-      <!-- hero  -->
-        <section class="pricing bg-right-img" id="pricing">
 
-          <div class="container">
+      <nav class="navbar" data-navbar>
 
-            <figure class="bg-left-img">
-              <!-- <img src="./assets/hero-img.jpg" alt="hero illustration"> -->
-            </figure>
+        <div class="navbar-top">
 
-            <div class="pricing-content">
-              <h2 class="h3 section-title">Title here</h2>
-
-              <p class="section-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quos aperiam illo ducimus placeat eius, similique tenetur exercitationem, consequatur nobis minus quaerat voluptates sed reprehenderit.
-              </p>
-
-              <button class="btn main-btn">order now</button>
-
-            </div>
-
-          </div>
-        </section>
-
-      <!-- features -->
-      <section class="service" id="service">
-        <div class="container">
-
-          <h2 class="h2 section-title">Best Seller</h2>
-
-          <p class="section-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores architecto iure nostrum atque deleniti itaque, alias sequi voluptas at!
-          </p>
-
-          <ul class="service-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
-                </div>
-
-                <h3 class="h4 card-title">title here</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
-                </p>
-
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
-                </div>
-
-                <h3 class="h4 card-title">title here</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
-                </p>
-
-              </div>
-            </li>
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
-                </div>
-                
-                <h3 class="h4 card-title">title here</h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
 
         </div>
-      </section>
 
-        <!-- 
-        - #ABOUT
-      -->
+        <ul class="navbar-list">
 
-        <!-- 1st feature  -->
-      <section class="about bg-img" id="about" style="background-image: url('./assets/back-bg.jpg')">
-        <div class="container">
-
-          <div class="about-top">
-
-            <figure class="about-banner">
-              <img src="./assets/event-1.jpg" alt="Seo illustration">
-            </figure>
-
-            <div class="about-content">
-
-              <h2 class="h3 section-title">Oriental Taste</h2>
-
-              <p class="section-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima tempore quas ad alias laudantium. Corrupti, voluptatum nisi quas saepe ex ducimus quam ipsa officia qui ratione autem, quae cum?
-              </p>
-
-              <button class="btn main-btn">order now</button>
-
-            </div>
-
-          </div>
-        </section>
-
-        <!-- stats  -->
-          <section class="section stats" aria-label="statistics">
-            <div class="container">
-        
-              <h2 class="h2 section-title">Statistics</h2>
-        
-              <p class="section-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores architecto iure nostrum atque deleniti itaque, alias sequi voluptas at!
-              </p>
-        
-        
-              <ul class="stats-list" data-reveal>
-        
-                <li class="stats-card">
-                  <h3 class="h3 card-title">650m</h3>
-        
-                  <p class="card-text">
-                    outlets
-                  </p>
-                </li>
-        
-                <li class="stats-card">
-                  <h3 class="h3 card-title">564+</h3>
-        
-                  <p class="card-text">
-                    chef
-                  </p>
-                </li>
-        
-                <li class="stats-card">
-                  <h3 class="h3 card-title">125k</h3>
-        
-                  <p class="card-text">
-                    menu
-                  </p>
-                </li>
-                <li class="stats-card">
-                  <h3 class="h3 card-title">125k</h3>
-        
-                  <p class="card-text">
-                    country
-                  </p>
-                </li>
-        
-              </ul>
-        
-        
-            </div>
-          </section>
-        
-          <!-- 2nd feature -->
-          <section class="about bg-img" id="about" style="background-image: url('./assets/flip-bg.jpg')">
-            <div class="container">
-              <div class="about-bottom">
-
-                <figure class="about-banner">
-                  <img src="./assets/service-1.jpg" alt="Seo illustration">
-                </figure>
-
-                <div class="about-content">
-
-                  <h2 class="h3 section-title">Oriental Taste</h2>
-
-                  <p class="section-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima tempore quas ad alias laudantium. Corrupti, voluptatum nisi quas saepe ex ducimus quam ipsa officia qui ratione autem, quae cum?
-                  </p>
-
-                  <button class="btn main-btn">order now</button>
-
-                </div>
-
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section feedback bg-img" aria-label="statistics" style="background-image: url('./assets/flip-bg.jpg')">
-        <div class="overlay"></div>
-        <div class="container">
-    
-          <p class="h3 feedback-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti alias, quisquam tempore autem repellendus.
-          </p>
-          
-          <h2 class="h1 feedback-title">Lenora Fields</h2>
-
-        </div>
-      </section>
-
-
-      <!-- <section class="hero text-center" aria-label="home" id="home">
-
-        <ul class="hero-slider" data-hero-slider>
-
-          <li class="slider-item active" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Lenora Fields
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Home</a>
           </li>
 
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Product</a>
           </li>
 
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor tells a story
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Promo</a>
           </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Contact</a>
+          </li>
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
 
         </ul>
 
-        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-          <ion-icon name="arrow-back"></ion-icon>
-        </button>
+      </nav>
 
-        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </button>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
 
-        </button>
+      <!-- <a href="#" class="btn has-before title-md">Make Appointment</a> -->
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!-- hero  -->
+  <section class="pricing bg-right-img" id="pricing">
+
+    <div class="container">
+
+      <figure class="bg-left-img">
+        <!-- <img src="./assets/hero-img.jpg" alt="hero illustration"> -->
+      </figure>
+
+      <div class="pricing-content">
+        <h2 class="h3 section-title">Title here</h2>
+
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quos aperiam illo ducimus placeat eius,
+          similique tenetur exercitationem, consequatur nobis minus quaerat voluptates sed reprehenderit.
+        </p>
+
+        <button class="btn main-btn">order now</button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="service" id="service">
+    <div class="container">
+
+      <h2 class="h2 section-title">Best Seller</h2>
+
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores architecto iure nostrum atque
+        deleniti itaque, alias sequi voluptas at!
+      </p>
+
+      <ul class="service-list">
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+                class="img-cover">
+            </div>
+
+            <h3 class="h4 card-title">title here</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
+            </p>
+
+          </div>
+        </li>
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+                class="img-cover">
+            </div>
+
+            <h3 class="h4 card-title">title here</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
+            </p>
+
+          </div>
+        </li>
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <img src="./assets/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+                class="img-cover">
+            </div>
+
+            <h3 class="h4 card-title">title here</h3>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.
+            </p>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- 
+        - #ABOUT
+      -->
+
+  <!-- 1st feature  -->
+  <section class="about bg-img" id="about" style="background-image: url('./assets/back-bg.jpg')">
+    <div class="container">
+
+      <div class="about-top">
+
+        <figure class="about-banner">
+          <img src="./assets/event-1.jpg" alt="Seo illustration">
+        </figure>
+
+        <div class="about-content">
+
+          <h2 class="h3 section-title">Oriental Taste</h2>
+
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima tempore quas ad alias laudantium.
+            Corrupti, voluptatum nisi quas saepe ex ducimus quam ipsa officia qui ratione autem, quae cum?
+          </p>
+
+          <button class="btn main-btn">order now</button>
+
+        </div>
+
+      </div>
+  </section>
+
+  <!-- stats  -->
+  <section class="section stats" aria-label="statistics">
+    <div class="container">
+
+      <h2 class="h2 section-title">Statistics</h2>
+
+      <p class="section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores architecto iure nostrum atque
+        deleniti itaque, alias sequi voluptas at!
+      </p>
 
 
-      </section> -->
+      <ul class="stats-list" data-reveal>
 
-        <!-- 
+        <li class="stats-card">
+          <h3 class="h3 card-title">650m</h3>
+
+          <p class="card-text">
+            outlets
+          </p>
+        </li>
+
+        <li class="stats-card">
+          <h3 class="h3 card-title">564+</h3>
+
+          <p class="card-text">
+            chef
+          </p>
+        </li>
+
+        <li class="stats-card">
+          <h3 class="h3 card-title">125k</h3>
+
+          <p class="card-text">
+            menu
+          </p>
+        </li>
+        <li class="stats-card">
+          <h3 class="h3 card-title">125k</h3>
+
+          <p class="card-text">
+            country
+          </p>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </section>
+
+  <!-- 2nd feature -->
+  <section class="about bg-img" id="about" style="background-image: url('./assets/flip-bg.jpg')">
+    <div class="container">
+      <div class="about-bottom">
+
+        <figure class="about-banner">
+          <img src="./assets/service-1.jpg" alt="Seo illustration">
+        </figure>
+
+        <div class="about-content">
+
+          <h2 class="h3 section-title">Oriental Taste</h2>
+
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima tempore quas ad alias laudantium.
+            Corrupti, voluptatum nisi quas saepe ex ducimus quam ipsa officia qui ratione autem, quae cum?
+          </p>
+
+          <button class="btn main-btn">order now</button>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section feedback bg-img" aria-label="statistics"
+    style="background-image: url('./assets/hero-slider-1.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+
+      <p class="h3 feedback-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti alias, quisquam tempore autem
+        repellendus.
+      </p>
+
+      <h2 class="h1 feedback-title">Lenora Fields</h2>
+
+    </div>
+  </section>
+
+  <!-- 
         - #NEWSLETTER
       -->
 
-      <section class="section newsletter">
-        <div class="container">
+  <section class="section newsletter">
+    <div class="container">
 
-          <div class="newsletter-card" style="background-image: url('./assets/images/newsletter-bg.png')">
+      <div class="newsletter-card">
 
-            <h2 class="card-title">Subscribe</h2>
+        <h2 class="card-title">Subscribe</h2>
 
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe, fugit pariatur sint.
-            </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias saepe, fugit pariatur sint.
+        </p>
 
-            <form action="" class="card-form">
+        <form action="" class="card-form">
 
-              <div class="input-wrapper">
-                <input type="email" name="emal" placeholder="Your Email" required class="input-field">
-              </div>
-
-              <button type="submit" class="btn btn-primary w-100">
-                <span>Subscribe</span>
-              </button>
-
-            </form>
-
+          <div class="input-wrapper">
+            <input type="email" name="emal" placeholder="Your Email" required class="input-field">
           </div>
 
-        </div>
-      </section>
+          <button type="submit" class="btn btn-primary w-100">
+            <span>Subscribe</span>
+          </button>
 
-    </article>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  </article>
   </main>
 
   <!-- 
@@ -403,15 +347,22 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="logo">
-          </a>
+          <div class="logo">
+            Your Logo
+          </div>
 
           <p class="footer-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sunt quae, possimus rem ipsa quo quod voluptatibus maxime eaque sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sunt quae, possimus rem ipsa quo quod
+            voluptatibus maxime eaque sed.
           </p>
 
           <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
 
             <li>
               <a href="#" class="social-link">
@@ -427,13 +378,7 @@
 
             <li>
               <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
 
@@ -549,4 +494,5 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
